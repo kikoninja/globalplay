@@ -1,0 +1,257 @@
+.trash-can{
+	position: absolute;
+	top: 30px;
+	right: 70px;
+	z-index: 1001;
+	display: none;
+}
+
+.to-be-deleted{
+	background: #F00;
+	opacity: 0.5;
+}
+
+.disable-tooltips{
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+}
+
+.custom-search-query{
+	padding-right: 25px !important;
+}
+
+.custom-icon-search{
+	position:absolute;
+	margin: 8px 0 0 -23px
+}
+
+.search-box{
+	width: 260px;
+	margin: 0 0 0 7px;
+}
+
+.search-results{
+	width: 260px;
+	padding: 0;
+	margin-top: 0px;
+	position: absolute;
+	background: #DDD;
+}
+
+.search-results .list-item{
+	cursor: default;
+}
+
+.search-results .list-item:hover{
+	background: none;
+}
+
+.add-to-list{
+	position: absolute;
+	margin: -45px 0 0 20px;
+}
+
+.custom-pagination{
+	margin: 0;
+}
+
+.playlist{
+	width: 260px;
+	height: 420px;
+	overflow: auto;
+	overflow-x: hidden;
+	padding: 0;
+}
+
+.list-item{
+	padding: 5px;
+	cursor: url(../img/play.png), auto;
+	transition: all .25s ease-in-out;
+}
+
+.list-item.active{
+	background: #DFF;
+}
+
+.list-item:hover{
+	background: #CFF;
+}
+.list-item-thumb{
+	width: 80px;
+	height: 60px;
+	cursor: move;
+}
+
+.list-item-text{
+	font-size: 12px;
+	height: 45px;
+    overflow: hidden;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.youtube-link{
+	position: absolute;
+	margin: 40px 0 0 130px;
+}
+
+.chat-holder{
+	margin: 20px 0 0 0;
+}
+
+.chat{
+	max-height: 500px;
+	overflow-y: auto;
+}
+
+.chat-item{
+	margin-top: 6px;
+}
+
+.chat-person{
+	margin-left: 0;
+}
+
+.chat-person div{
+	margin: 10px 0 0 10px;
+	width: 120px;
+	overflow: hidden;
+}
+
+.chat-text{
+	margin: 10px 0 0 10px;
+}
+
+.chat-img{
+	width: 40px;
+	height: 40px;
+}
+
+/*
+.playlist a{
+	width: 120px;
+	height: 67px;
+	float: left;
+	margin: 6px;
+	overflow: hidden;
+	border-radius: 10px;
+	transition: all .25s ease-in-out;
+}
+
+.playlist a:hover{
+	box-shadow: 0 0 12px #000;
+}
+
+.playlist a img{
+	width: 120px;
+	height: 90px;
+}
+/*
+.controls{
+	width: 854px;
+	height: 64px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.controls a{
+	margin-right: 6px;
+	opacity: 1;
+	transition: all .25s ease-in-out;
+}
+*/
+
+.controls a:hover{
+	opacity: 0.8;
+}
+
+.flt{
+	float: left;
+}
+
+.frt{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+/* google signin button 
+
+.zocial.google:before {
+    content: "g";
+}
+.zocial:before {
+    border-right: 0.075em solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0.075em 0 0 rgba(255, 255, 255, 0.25);
+    content: "";
+    float: left;
+    font: 120%/1.65 zocial;
+    margin: 0 0.5em 0 0;
+    padding: 0 0.5em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+}
+.zocial.google {
+    background-color: #4E6CF7;
+}
+body .zocial {
+    font-size: 13px;
+    margin: 8px 4px;
+}
+.zocial, a.zocial {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-user-select: none;
+    border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.4);
+    border-image: none;
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0.08em 0 rgba(255, 255, 255, 0.4) inset, 0 0 0.1em rgba(255, 255, 255, 0.9) inset;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font: bold 100%/2.1 "Lucida Grande",Tahoma,sans-serif;
+    padding: 0 0.95em 0 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+}
+.zocial {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.1));
+}
+
+/* end google signin button 
+
+/* user info 
+
+.user_info{
+	float: left;
+	background: #E4F4FA;
+	padding: 10px;
+	margin: 4px 0;
+	box-shadow: inset 0 0 10px #BBB;
+	border-radius: 4px;
+}
+
+.user_info img{
+	width: 64px;
+	height: 64px;
+	border-radius: 32px;
+	box-shadow: 0 0 4px #BBB;
+}
+
+.user_info_text{
+	text-align: right;
+	margin: 15px 0 0 10px;
+}
+
+/* end user info /*
